@@ -50,14 +50,22 @@ h1
     position: fixed;
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     cursor: pointer;
-    transition: opacity 0.3s
+    transition: opacity 0.3s;
+    background-image: url(../images/arrow_down.png);
+    background-size: contain;
+}
+
+#scroll-icon img
+{
+    width: 100px;
+    height: 100px;
 }
 
 #scroll-icon.hide 
