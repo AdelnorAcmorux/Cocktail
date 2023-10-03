@@ -1,0 +1,40 @@
+body
+{
+    font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the buttons */
+button 
+{
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+h1 
+{
+    font-family: fantasy;
+    text-align: center; /* Center the text */
+    font-size: 45px; /* Adjust the font size as needed */
+}
+
+.highlight 
+{
+    color: #ffd700;
+    font-weight: bold;
+}
