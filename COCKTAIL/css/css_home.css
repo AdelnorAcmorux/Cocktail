@@ -21,9 +21,11 @@ header
 /* Style the buttons */
 button 
 {
-    margin: 0 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 0 1em;
+    width: 10em;
+    height: 3em;
+    font-size: 3vh;
+    font-weight: bold;
 }
 
 h1 
