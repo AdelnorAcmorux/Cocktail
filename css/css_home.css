@@ -78,15 +78,14 @@ h1
 
 @media screen and (max-width: 850px) {
     header {
-        display: list-item;
-        padding-top: 25vh;
+        flex-direction: column;
     }
-
+    
     #scroll-icon {
-        margin-left: 46%;
+        position: inherit;
     }
 
     header button {
-        margin: 2vh 15%;
+        margin: 2vh 0;
     }
 }
