@@ -1,6 +1,10 @@
+// Wait for the document to fully load before running the JavaScript code
 document.addEventListener('DOMContentLoaded', function () {
-    var scrollIcon = document.getElementById('scroll-icon');
+    // Get references to the scroll element and target element by their IDs
+    const scrollIcon = document.getElementById('scroll-icon');
+    const targetElement = document.getElementById('scroll-target');
 
+    // Add a click event listener to the scroll element
     window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
             scrollIcon.classList.add('hide');
@@ -8,11 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
             scrollIcon.classList.remove('hide');
         }
     });
-
+    
+    // Add a click event listener to the scroll element
     scrollIcon.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        targetElement.scrollIntoView({ behavior: 'smooth' });
     });
 });
