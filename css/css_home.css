@@ -19,21 +19,28 @@ header
     align-items: center;
     justify-content: center;
     height: 100%;
+    user-select: none;
+}
+
+main {
+    padding: 0 20% 10vh;
+    /* font-family: sans-serif; */
 }
 
 header button {
     margin: 0 1em;
-}
-
-/* Style the buttons */
-button 
-{
     width: 10em;
     height: 3em;
     font-size: 3vh;
     font-weight: bold;
     font-size: 22px;
     font-family: fantasy;
+    transition-delay: .1s;
+    transition-duration: .25s;
+}
+
+header button:hover {
+    transform: scale(1.05);
 }
 
 h1 
@@ -72,13 +79,14 @@ h1
 @media screen and (max-width: 850px) {
     header {
         display: list-item;
+        padding-top: 25vh;
     }
 
     #scroll-icon {
-        margin-left: 50%;
+        margin-left: 46%;
     }
 
     header button {
-        margin: 0 15%;
+        margin: 2vh 15%;
     }
 }
