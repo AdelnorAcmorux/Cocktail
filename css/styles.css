@@ -5,6 +5,9 @@
 
 :root {
     /* General settings */
+    --font_family-header: Arial, Helvetica, sans-serif;
+    --font_family-title: fantasy;
+    --font_family-text: sans-serif;
 
     /* Dark theme */
     --background_color-dark: #2b2b2b;
