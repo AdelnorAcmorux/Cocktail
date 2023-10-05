@@ -1,3 +1,7 @@
+header {
+    margin: 0 40px;
+}
+
 footer button {
     margin: 0 1em;
     width: 10em;
@@ -7,10 +11,6 @@ footer button {
     font-family: var(--font_family-title);
     transition-delay: .1s;
     transition-duration: .25s;
-}
-
-header {
-    margin: 0 40px;
 }
 
 footer button:hover {
