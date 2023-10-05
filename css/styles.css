@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* General settings */
+
+    /* Dark theme */
+    --background_color-dark: #2b2b2b;
+    --font_color-dark: #fff;
+    --scrollbar_thumb-dark: #999;
+    
+    /* Light theme */
+    --background_color_light: #d4d4d4;
+    --font_color-light: #000;
+    --scrollbar_thumb-light: #1a1a1a;
+}
+
+body {
+    background-color: var(--background_color-dark);
+    color: var(--font_color-dark);
+}
