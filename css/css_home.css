@@ -64,9 +64,12 @@ h1
     background-image: url(../images/arrow_down.png);
     background-size: contain;
     margin-top: 25%;
+    opacity: 50%;
+    transition-duration: 0.75s;
 }
 
 #scroll-icon:hover {
+    opacity: 100%;
     animation: hop .5s infinite alternate;
     animation-delay: 1s;
 }
@@ -74,7 +77,8 @@ h1
 /* Define the hop animation */
 @keyframes hop {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(-10px) rotateY(180deg); }
 }
 
 #scroll-icon.hide 
