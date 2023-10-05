@@ -1,26 +1,3 @@
-html,
-body {
-    font-family: var(--font_family-header);
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    user-select: none;
-}
-
-main {
-    padding: 0 20% 10vh;
-    font-family: var(--font_family-text);
-}
-
 header button {
     margin: 0 1em;
     width: 10em;
@@ -32,19 +9,12 @@ header button {
     transition-duration: .25s;
 }
 
+header {
+    display: flex;
+}
+
 header button:hover {
     transform: scale(1.05);
-}
-
-h1 {
-    font-family: var(--font_family-title);
-    text-align: center;
-    font-size: 4em;
-}
-
-.highlight {
-    color: #ffd700;
-    font-weight: bold;
 }
 
 #scroll-icon {
@@ -65,29 +35,14 @@ h1 {
     animation-delay: 1s;
 }
 
-/* Define the hop animation */
-@keyframes hop {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(-10px) rotateY(180deg); }
-}
-
 #scroll-icon.hide {
     opacity: 0;
     pointer-events: none;
 }
 
 @media screen and (max-width: 850px) {
-    main {
-        padding: 0 15% 10vh;
-    }
-
     header {
         flex-direction: column;
-    }
-
-    #scroll-icon {
-        position: inherit;
     }
 
     header button {
