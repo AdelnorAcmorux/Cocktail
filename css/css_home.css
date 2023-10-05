@@ -66,6 +66,17 @@ h1
     margin-top: 25%;
 }
 
+#scroll-icon:hover {
+    animation: hop .5s infinite alternate;
+    animation-delay: 1s;
+}
+
+/* Define the hop animation */
+@keyframes hop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 #scroll-icon.hide 
 {
     opacity: 0;
