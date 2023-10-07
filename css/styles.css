@@ -5,19 +5,75 @@
 
 :root {
     /* General settings */
+    --font_family-header: Arial, Helvetica, sans-serif;
+    --font_family-title: fantasy;
+    --font_family-text: sans-serif;
 
     /* Dark theme */
     --background_color-dark: #2b2b2b;
     --font_color-dark: #fff;
     --scrollbar_thumb-dark: #999;
-    
+
     /* Light theme */
     --background_color_light: #d4d4d4;
     --font_color-light: #000;
     --scrollbar_thumb-light: #1a1a1a;
 }
 
+html, body {
+    font-family: var(--font_family-header);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 body {
     background-color: var(--background_color-dark);
     color: var(--font_color-dark);
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    user-select: none;
+}
+
+h1 {
+    font-family: var(--font_family-title);
+    text-align: center;
+    font-size: 4em;
+}
+
+main {
+    padding: 0 20% 10vh;
+    font-family: var(--font_family-text);
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Define the hop animation */
+@keyframes hop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(-10px) rotateY(180deg); }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        padding: 0 15% 10vh;
+    }
+    
+    #scroll-icon {
+        position: inherit;
+    }
 }
