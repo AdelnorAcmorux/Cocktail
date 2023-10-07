@@ -52,6 +52,10 @@ main {
     font-family: var(--font_family-text);
 }
 
+p {
+    letter-spacing: 1px;
+}
+
 .highlight {
     color: #ffd700;
     font-weight: bold;
