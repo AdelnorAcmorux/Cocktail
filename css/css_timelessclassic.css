@@ -26,3 +26,23 @@ footer button:hover {
         margin: 2vh 0;
     }
 }
+
+.button_cocktail {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Changes size depending on the screen size */
+@media (max-width: 600px) {
+    /* changes the layout so the row becomes by 2, instead of 4 */
+    .button_cocktail {
+        width: 45%;
+        display: block;
+        margin: 5px auto;
+    }
+}
